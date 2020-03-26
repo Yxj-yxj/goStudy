@@ -20,10 +20,11 @@ func protect(g func()) {
 		//}
 	}()
 	log.Println("start")
+	log.Println("start")
 	g() //   possible runtime-error
 }
 
-func main()  {
+func main() {
 	protect(g)
 	fmt.Println("program end")
 }
